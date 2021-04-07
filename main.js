@@ -6,7 +6,7 @@ const SCORPIONS = {
   attack: function attack() {
     console.log(this.name + 'Fight...');
   },
-}
+};
 
 const KITANA = {
   name: 'Kitana',
@@ -16,7 +16,7 @@ const KITANA = {
   attack: function attack() {
     console.log(this.name + 'Fight...');
   },
-}
+};
 
 function createPlayer(player, pers) {
   const PLAYER1 = document.createElement('div');
@@ -30,7 +30,7 @@ function createPlayer(player, pers) {
 
   const LIFE = document.createElement('div');
   LIFE.classList.add('life');
-  LIFE.style.width = '100%';
+  LIFE.style.width = pers.hp + '%';
 
   const NAME = document.createElement('div');
   NAME.classList.add('name');
